@@ -6,6 +6,9 @@ model = genai.GenerativeModel("gemini-1.5-flash", system_instruction="act as a n
 
 chat = model.start_chat(history=[])
 
+print("Joe >>> Hey my name is Joe")
+print("-" * 50)
+
 while True:
     user = input("User >>> ")
     if user.lower == "quit":
